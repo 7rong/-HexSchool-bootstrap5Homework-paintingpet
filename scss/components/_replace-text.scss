@@ -1,0 +1,34 @@
+$url-nav : '/HexSchool-bootstrap5Homework-pet/img/logo.png';
+$url-work : '/HexSchool-bootstrap5Homework-pet/img/title01.png';
+$url-adopt : '/HexSchool-bootstrap5Homework-pet/img/title02.png';
+
+.replace-text-nav{
+    display: block;
+    height: 40px; 
+    width: 119px;
+    background-image: url($url-nav);
+    background-repeat: no-repeat;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.replace-text-work{
+    height: 134px;
+    width: 250px;
+    background-image: url($url-work);
+    background-repeat: no-repeat;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.replace-text-adopt{
+    height: 134px;
+    width: 250px;
+    background-image: url($url-adopt);
+    background-repeat: no-repeat;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}

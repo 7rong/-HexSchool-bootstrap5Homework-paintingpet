@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>撿到寶</title>
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/7rong/HexSchool-bootstrap5Homework-pet/main/img/icon.png">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+<body class="ff-noto">
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white px-lg-5">
+        <div class="container-fluid">
+            <h1><a href="#" class="replace-text-nav mt-2">撿到寶</a></h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item px-4">
+                        <a class="nav-link" aria-current="page" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link" href="intro.html">服務介紹</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link" href="works.html">設計作品</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link" href="adopt.html">領養專區</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link btn btn-primary px-5 rounded-pill btn-nav" href="painting.html">毛孩似顏繪</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要內容 -->
+    <div style="background-image: url(./img/lightpaperfibers.png)">
+        <!-- banner -->
+        <div class="py-4">
+            <img src="./img/banner.png" alt="毛孩似顏繪" class="img-fluid d-none d-lg-block mx-auto">
+            <img src="./img/banner_moblie.png" alt="毛孩似顏繪" class="img-fluid d-lg-none d-block mx-auto">
+        </div>
+
+        <!-- form -->
+        <div class="col-11 col-lg-8 mx-auto py-5">
+            <form class="row g-3 bg-white shadow rounded-3 border-top border-primary border-4 p-4 text-secondary">
+                <div class="col-12"><h3 class="text-center pb-5 pt-2">填寫訂購資訊</h3></div>
+                <div class="col-md-6">
+                    <label for="input-first-name" class="form-label">名字</label>
+                    <input type="text" class="form-control" id="input-first-name">
+                </div>
+                <div class="col-md-6">
+                    <label for="input-last-name" class="form-label">姓氏</label>
+                    <input type="text" class="form-control" id="input-last-name">
+                </div>
+                <div class="col-12">
+                    <label for="input-tel" class="form-label">手機號碼</label>
+                    <input type="tel" class="form-control" id="input-tel" placeholder="0987654321">
+                </div>
+                <div class="col-12">
+                    <label for="input-email" class="form-label">電子郵件</label>
+                    <input type="email" class="form-control" id="input-email" placeholder="xxx@gmail.com">
+                </div>
+                <div class="col-12">
+                    <div class="row gy-1">
+                        <div class="col-md-6">
+                            <label for="inputState" class="form-label">收件地址</label>
+                            <select id="inputState" class="form-select">
+                            <option selected disabled>請選擇城市</option>
+                            <option>台北市</option>
+                            <option>台中市</option>
+                            <option>高雄市</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mt-md-auto">
+                            <select id="inputState" class="form-select">
+                                <option selected disabled>請選擇區域</option>
+                            <option>...</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control" placeholder="請輸入詳細地址">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <label for="input-designer" class="form-label">選擇設計師風格</label>
+                    <select id="input-designer" class="form-select">
+                    <option selected>Meili</option>
+                    <option>Ruby</option>
+                    <option>Jack</option>
+                    <option>Derek</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label for="input-paid" class="form-label">付款方式</label>
+                    <select id="input-paid" class="form-select">
+                    <option selected>信用卡付款</option>
+                    <option>帳號轉帳</option>
+                    <option>貨到付款</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label for="input-add" class="form-label">加購服務</label> <br>
+                    <div class="form-check form-check-inline" id="input-add">
+                        <input class="form-check-input" type="checkbox" id="plus100">
+                        <label class="form-check-label" for="plus100">
+                        送禮用包裝+100
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline" id="input-add">
+                        <input class="form-check-input" type="checkbox" id="plus250">
+                        <label class="form-check-label" for="plus250">
+                        無框畫+250
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12 mb-4">
+                    <label for="input-textarea" class="form-label">備註說明</label>
+                    <textarea class="form-control" id="input-textarea" rows="3" style="resize:none;"></textarea>
+                </div>
+                <p class="text-center h4 fw-bold mb-4">總金額 NT300元</p>
+                <div class="col-auto mx-auto mb-5">
+                    <button type="submit" class="btn btn-primary rounded-pill px-5 fs-4">送出訂購資訊</button>
+                </div>
+              </form>
+        </div>
+       
+    </div>
+
+    <!-- footer -->
+    <footer class="border-top border-primary border-3">
+        <div class="container py-5">
+            <div class="row justify-content-center row-cols-1 row-cols-lg-2 gx-lg-5 gy-5">
+                <div class="col">
+                    <div class="d-flex flex-column flex-lg-row border-0 align-items-center justify-content-lg-end">
+                        <img src="./img/link01.png" alt="加入奴才團隊" class="img-fluid mb-4 mb-lg-0">
+                        <div class="text-center text-lg-start ps-3">
+                            <h3 class="fs-4 fw-normal">加入奴才團隊</h3>
+                            <p>我也會畫畫，希望能盡一份心力！</p>
+                            <a class="btn btn-outline-secondary px-5 rounded-pill" href="#" role="button">聯絡我們</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex flex-column flex-lg-row border-0 align-items-center">
+                        <img src="./img/link02.png" alt="加入奴才團隊" class="img-fluid mb-4 mb-lg-0">
+                        <div class="text-center text-lg-start ps-3">
+                            <h3 class="fs-4 fw-normal">加入奴才團隊</h3>
+                            <p>我也會畫畫，希望能盡一份心力！</p>
+                            <a class="btn btn-outline-secondary px-5 rounded-pill" href="#" role="button">聯絡我們</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-secondary py-4">
+            <p class="mb-0 text-white text-center">Copyright © 2021 撿到寶.All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

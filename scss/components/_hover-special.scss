@@ -1,0 +1,212 @@
+$adopt-1:'/HexSchool-bootstrap5Homework-pet/img/dog01.png';
+$adopt-1-hover:'/HexSchool-bootstrap5Homework-pet/img/dog01-hover-1.png';
+$adopt-2:'/HexSchool-bootstrap5Homework-pet/img/dog02.png';
+$adopt-2-hover:'/HexSchool-bootstrap5Homework-pet/img/dog02-hover.png';
+$adopt-3:'/HexSchool-bootstrap5Homework-pet/img/08.png';
+$adopt-3-hover:'/HexSchool-bootstrap5Homework-pet/img/dog03-hover.png';
+$adopt-4:'/HexSchool-bootstrap5Homework-pet/img/06.png';
+$adopt-4-hover:'/HexSchool-bootstrap5Homework-pet/img/dog01-hover-1.png';
+$adopt-5:'/HexSchool-bootstrap5Homework-pet/img/07.png';
+$adopt-5-hover:'/HexSchool-bootstrap5Homework-pet/img/dog02-hover.png';
+$adopt-6:'/HexSchool-bootstrap5Homework-pet/img/05.png';
+$adopt-6-hover:'/HexSchool-bootstrap5Homework-pet/img/dog03-hover.png';
+
+$painting:'/HexSchool-bootstrap5Homework-pet/img/btn.png';
+$painting-hover:'/HexSchool-bootstrap5Homework-pet/img/btn2.png';
+
+
+.hover-work{
+    .card-img-overlay{
+        display: none;
+    }
+    &:hover{
+        .card-img-overlay{
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+    }
+}
+
+.hover-adopt-1{
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    .adopt-img{
+        background-image: url($adopt-1);
+        background-size: cover;
+        width: 100%;
+        padding-top: 100%;
+        background-position: center center;
+    }
+    a{
+        color:$secondary;
+    }
+    &:hover{
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        .adopt-img{
+            background-image: url($adopt-1-hover);
+        }
+        a{
+            color: $primary;
+        }
+    }
+}
+
+.hover-adopt-2{
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    .adopt-img{
+        background-image: url($adopt-2);
+        background-size: cover;
+        width: 100%;
+        padding-top: 100%;
+        background-position: center center;
+    }
+    a{
+        color:$secondary;
+    }
+    &:hover{
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        .adopt-img{
+            background-image: url($adopt-2-hover);
+        }
+        a{
+            color: $primary;
+        }
+    }
+}
+
+
+.hover-adopt-3{
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    .adopt-img{
+        background-image: url($adopt-3);
+        background-size: cover;
+        width: 100%;
+        padding-top: 100%;
+        background-position: center center;
+    }
+    a{
+        color:$secondary;
+    }
+    &:hover{
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        .adopt-img{
+            background-image: url($adopt-3-hover);
+        }
+        a{
+            color: $primary;
+        }
+    }
+}
+
+.hover-adopt-4{
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    .adopt-img{
+        background-image: url($adopt-4);
+        background-size: cover;
+        width: 100%;
+        padding-top: 100%;
+        background-position: center center;
+    }
+    a{
+        color:$secondary;
+    }
+    &:hover{
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        .adopt-img{
+            background-image: url($adopt-4-hover);
+        }
+        a{
+            color: $primary;
+        }
+    }
+}
+
+.hover-adopt-5{
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    .adopt-img{
+        background-image: url($adopt-5);
+        background-size: cover;
+        width: 100%;
+        padding-top: 100%;
+        background-position: center center;
+    }
+    a{
+        color:$secondary;
+    }
+    &:hover{
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        .adopt-img{
+            background-image: url($adopt-5-hover);
+        }
+        a{
+            color: $primary;
+        }
+    }
+}
+
+.hover-adopt-6{
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    .adopt-img{
+        background-image: url($adopt-6);
+        background-size: cover;
+        width: 100%;
+        padding-top: 100%;
+        background-position: center center;
+    }
+    a{
+        color:$secondary;
+    }
+    &:hover{
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        .adopt-img{
+            background-image: url($adopt-6-hover);
+        }
+        a{
+            color: $primary;
+        }
+    }
+}
+
+.hover-painting{
+    display: block;
+    height: 150px;
+    width: 150px;
+    background-image: url($painting);
+    background-repeat: no-repeat;
+    &:hover{
+        background-image: url($painting-hover);
+    }
+}
+
+.hover-designer{
+    display: block;
+    text-decoration: none;
+    color: $secondary;
+    span{
+        display: none;
+    }
+
+    &:hover{
+        color: $primary;
+    }
+
+    @media (min-width:992px){
+        &:hover{
+            color: $primary;
+            span{
+                display: inline-block;
+                padding: 0 .5rem;
+            }
+        }
+    }
+}
+
+.hover-designer.active{
+    color: $primary;
+    @media (min-width:992px){
+        span{
+            display: inline-block;
+            padding: 0 .5rem;
+        }
+    }
+}

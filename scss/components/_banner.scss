@@ -1,0 +1,29 @@
+$home-pc:'/HexSchool-bootstrap5Homework-pet/img/home.png';
+$home-mobile:'/HexSchool-bootstrap5Homework-pet/img/home_mobile.png ';
+
+.banner{
+    background-image: url($home-mobile);
+    height:635px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    h2{
+        display: none;
+    }
+    @media (min-width : 768px){
+        background-image:url($home-pc);
+        height:810px;
+        h2{
+            display: block;
+            color: #878b73;
+            position: relative;
+            &::before{
+                content: attr(data-stroke);
+                position: absolute;
+                z-index: -1;
+                -webkit-text-stroke: 8px white;
+            }    
+        }
+    }
+}
+

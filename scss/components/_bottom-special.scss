@@ -1,0 +1,65 @@
+.btn-nav{
+    &:hover{
+        color: $secondary;
+        box-shadow: 0 3px 0px $secondary;
+    }
+}
+
+.btn-work{
+    &:hover{
+        background: $primary;
+        border-color: $primary ;
+        color: $secondary
+    }
+}
+
+.btn-cus{
+    background: #FFF;
+    &:hover{
+        background: #FFF;
+    }
+}
+
+.dialog-border-btn {
+    border: 2px solid $secondary;
+    border-radius: .75rem;
+    background: #fff;
+    height: 2.5rem;
+    margin-bottom: 10px;
+    position: relative;
+    width: 105%;
+    &::before{
+        border-color: $secondary transparent transparent; 
+        border-style: solid solid solid; 
+        border-width: 15px 16px 15px 16px; 
+        bottom: -30px;
+     
+        /* 必須指定，才能顯示內容 */
+        content: "";
+     
+        height: 0px;
+     
+        /* 必須指定，否則會變梯形 */
+        position: absolute;
+            left: 57px; 
+     
+        width: 0px;
+    }
+    &::after{
+        border-color: #fff transparent transparent; 
+        border-style: solid solid solid solid; 
+        border-width: 15px 16px 15px 16px;
+     
+        /* 必須指定，才能顯示內容 */
+        content: "";
+     
+        height: 0px;
+     
+        /* 必須指定，否則會變梯形 */
+        position: absolute;
+            left: 57px;
+            bottom: -27px;
+    
+        width: 0px;
+    }
+}
